@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-image {
+    background-image: url('../../public/images/bg-intro-mobile.png');
+}
+
+.shadow {
+    box-shadow: 0 6px 0px rgba(34, 34, 34, 0.233);
+}
+
+.shadow-green {
+    box-shadow: 0 5px 0px hsla(140, 83%, 30%, 0.712);
+}
+
+.shadow-green:hover {
+    background-color: hsla(154, 59%, 51%, 0.712);
+}
+
+@media screen and (min-width: 376px){
+    .bg-image {
+        background-image: url('../../public/images/bg-intro-desktop.png');
+        height: 100vh;
+    }
+}

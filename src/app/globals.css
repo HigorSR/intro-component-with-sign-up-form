@@ -18,7 +18,7 @@
     background-color: hsla(154, 59%, 51%, 0.712);
 }
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 1280px){
     .bg-image {
         background-image: url('../../public/images/bg-intro-desktop.png');
         height: 100vh;

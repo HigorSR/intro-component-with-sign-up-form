@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         'mobile': "url('/bg-intro-mobile.png')",
         'desktop': "url('/bg-intro-desktop.png')",
+        'error': "url('/icon-error.svg')"
       },
       colors: {
         'Red': "hsl(0, 100%, 74%)",

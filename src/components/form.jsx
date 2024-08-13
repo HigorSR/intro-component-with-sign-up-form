@@ -20,7 +20,6 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(fname);
   };
 
   const handleValidation = () => {
@@ -65,113 +64,59 @@ export default function Form() {
 
   return (
     <div className="flex flex-col gap-4 bg-white rounded-xl shadow-[0px_7px_0px_0px_rgba(0,0,0,0.18);] p-6 xl:p-10">
+
       <form action="" className="flex flex-col" onSubmit={handleSubmit}>
-        <input
-          value={fname}
-          type="text"
-          placeholder="First Name"
+        <input value={fname} type="text" placeholder="First Name"
           onChange={(e) => setFname(e.target.value)}
-          className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3
-            ${validFname ? "" : "border-Red border-2"}`}
-        />
+          className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3 ${validFname ? "" : "border-Red border-2"}`}/>
         {
           <div className="relative">
-            <div
-              className={`${
-                validFname
-                  ? ""
-                  : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"
-              }`}
-            ></div>
-            <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">
-              {fnameMessage}
-            </p>
+            <div className={`${validFname ? "" : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
+            <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">{fnameMessage}</p>
           </div>
         }
 
-        <input
-          value={lname}
-          type="text"
-          placeholder="Last Name"
+        <input value={lname} type="text" placeholder="Last Name"
           onChange={(e) => setLname(e.target.value)}
-          className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3
-            ${validLname ? "" : "border-Red border-2"}`}
-        />
+          className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3 ${validLname ? "" : "border-Red border-2"}`} />
         {
           <div className="relative">
-            <div
-              className={`${
-                validLname
-                  ? ""
-                  : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"
-              }`}
-            ></div>
-            <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">
-              {lnameMessage}
-            </p>
+            <div className={`${validLname ? "" : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
+            <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">{lnameMessage}</p>
           </div>
         }
 
-        <input
-          value={email}
-          type="email"
-          placeholder="Email Address"
+        <input value={email} type="email" placeholder="Email Address"
           onChange={(e) => setEmail(e.target.value)}
-          className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3
-            ${validEmail ? "" : "border-Red border-2"}`}
-        />
+          className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3 ${validEmail ? "" : "border-Red border-2"}`} />
         {
           <div className="relative">
-            <div
-              className={`${
-                validEmail
-                  ? ""
-                  : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"
-              }`}
-            ></div>
-            <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">
-              {emailMessage}
-            </p>
+            <div className={`${validEmail ? "" : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
+            <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">{emailMessage}</p>
           </div>
         }
 
-        <input
-          value={password}
-          type="password"
-          placeholder="Password"
+        <input value={password} type="password" placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
-          className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3
-            ${validPassword ? "" : "border-Red border-2"}`}
-        />
+          className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3 ${validPassword ? "" : "border-Red border-2"}`} />
         {
           <div className="relative">
-            <div
-              className={`${
-                validPassword
-                  ? ""
-                  : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"
-              }`}
-            ></div>
-            <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">
-              {passwordMessage}
-            </p>
+            <div className={`${validPassword ? "" : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
+            <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">{passwordMessage}</p>
           </div>
         }
 
         <button
           className="bg-Green uppercase tracking-wide text-white py-3 rounded-md shadow-[0px_4px_0px_0px_rgba(0,0,0,0.15);] shadow-green-600"
-          onClick={handleValidation}
-        >
+          onClick={handleValidation}>
           Claim your free trial
         </button>
       </form>
+
       <p className="text-[0.65rem] mx-5 text-center text-Grayish-Blue">
-        By clicking the button, you are agreeing to our{" "}
-        <span className="text-Red font-medium">
-          <br />
-          Terms and Services
-        </span>
+        By clicking the button, you are agreeing to our<span className="text-Red font-medium"><br />Terms and Services</span>
       </p>
+
     </div>
   );
 }

@@ -10,11 +10,6 @@ module.exports = {
       screens: {
         'mobile': "430px",
       },
-      backgroundImage: {
-        'mobile': "url('/bg-intro-mobile.png')",
-        'desktop': "url('/public/bg-intro-desktop.png')",
-        'error': "url('/icon-error.svg')"
-      },
       colors: {
         'Red': "hsl(0, 100%, 74%)",
         'Green': "hsl(154, 59%, 51%)",

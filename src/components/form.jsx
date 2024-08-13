@@ -71,7 +71,7 @@ export default function Form() {
           className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3 ${validFname ? "" : "border-Red border-2"}`}/>
         {
           <div className="relative">
-            <div className={`${validFname ? "" : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
+            <div className={`${validFname ? "" : "bg-[url('../../public/icon-error.svg')] bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
             <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">{fnameMessage}</p>
           </div>
         }
@@ -81,7 +81,7 @@ export default function Form() {
           className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3 ${validLname ? "" : "border-Red border-2"}`} />
         {
           <div className="relative">
-            <div className={`${validLname ? "" : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
+            <div className={`${validLname ? "" : "bg-[url('../../public/icon-error.svg')] bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
             <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">{lnameMessage}</p>
           </div>
         }
@@ -91,7 +91,7 @@ export default function Form() {
           className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3 ${validEmail ? "" : "border-Red border-2"}`} />
         {
           <div className="relative">
-            <div className={`${validEmail ? "" : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
+            <div className={`${validEmail ? "" : "bg-[url('../../public/icon-error.svg')] bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
             <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">{emailMessage}</p>
           </div>
         }
@@ -101,7 +101,7 @@ export default function Form() {
           className={`font-semibold w-full border-[1px] focus:border-Blue focus:ring-0 focus:outline-none rounded-md pl-5 py-3 ${validPassword ? "" : "border-Red border-2"}`} />
         {
           <div className="relative">
-            <div className={`${validPassword ? "" : "bg-error bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
+            <div className={`${validPassword ? "" : "bg-[url('../../public/icon-error.svg')] bg-contain bg-no-repeat absolute right-5 -top-9 w-6 h-6"}`}></div>
             <p className="text-Red italic text-xs text-end font-medium pb-3 pt-1">{passwordMessage}</p>
           </div>
         }
